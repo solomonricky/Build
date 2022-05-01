@@ -15,6 +15,9 @@ on:
   watch:
     types: started
   push:
+    paths:
+      - '.github/workflows/Dlink-DIR842.yml'
+      - 'devices/Dlink-DIR842/.config'
 
 env:
   REPO_URL: https://github.com/solomonricky/openwrt
@@ -122,7 +125,7 @@ jobs:
       run: |
         cd openwrt/bin/targets/*/*
         rm -rf packages
-        zip -r $(DEVICE_SAVE_NAME).zip ./*
+        zip -r ${{ DEVICE_SAVE_NAME }}.zip ./*
         rm -rf !(*.zip)
         ls -Ahl
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
