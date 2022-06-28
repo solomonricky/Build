@@ -18,6 +18,8 @@ on:
     paths:
       - '.github/workflows/Xiaomi-Mi4A.yml'
       - 'devices/Xiaomi-Mi4A/.config'
+      - 'devices/Xiaomi-Mi4A/diy-part1.sh'
+      - 'devices/Xiaomi-Mi4A/diy-part2.sh'
 
 env:
   REPO_URL: https://github.com/solomonricky/immortalwrt
