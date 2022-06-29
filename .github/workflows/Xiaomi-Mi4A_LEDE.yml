@@ -22,8 +22,8 @@ on:
       - 'devices/Xiaomi-Mi4A_LEDE/diy-part2.sh'
 
 env:
-  REPO_URL: https://github.com/solomonricky/immortalwrt
-  REPO_BRANCH: openwrt-21.02_beta
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: devices/Xiaomi-Mi4A_LEDE/.config
   DIY_P1_SH: devices/Xiaomi-Mi4A_LEDE/diy-part1.sh
