@@ -81,7 +81,7 @@ svn export https://github.com/solomonricky/openwrt-passwall/branches/luci-nodns/
 svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus feeds/luci/applications/luci-app-ssr-plus
 
 sed -i 's/1.5.8/1.5.0/g' feeds/packages/net/xray-core/Makefile
-sed -i 's/1d1f7f3de0596c430fde6e3027b93c45f5fa340d291c05bc48216750dc77ca8f/54c6a687dd463b25afe8d8eb44d37e18b8177f58308207cd1d74f6cd04619854/g' feeds/packages/net/xray-core/Makefile
+sed -i 's/1d1f7f3de0596c430fde6e3027b93c45f5fa340d291c05bc48216750dc77ca8f/43f35c83902db9d1eba0210c0e27b7814d4caf198cd0424c8af9c97a3ce9a860/g' feeds/packages/net/xray-core/Makefile
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
