@@ -18,6 +18,8 @@ on:
     paths:
       - '.github/workflows/Xiaomi-Mi4A_LEDE.yml'
       - 'devices/Xiaomi-Mi4A_LEDE/.config'
+      - 'devices/Xiaomi-Mi4A_LEDE/diy-part1.sh'
+      - 'devices/Xiaomi-Mi4A_LEDE/diy-part2.sh'
 
 env:
   REPO_URL: https://github.com/solomonricky/immortalwrt
