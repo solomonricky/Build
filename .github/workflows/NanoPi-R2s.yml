@@ -8,7 +8,7 @@
 #                                                                     #
 # =================================================================== #
 
-name: Xiaomi-AX3600
+name: NanoPi-R2s
 
 on:
   workflow_dispatch:
@@ -16,16 +16,16 @@ on:
     types: started
   push:
     paths:
-      - '.github/workflows/Xiaomi-AX3600.yml'
-      - 'devices/Xiaomi-AX3600/.config'
+      - '.github/workflows/NanoPi-R2s.yml'
+      - 'devices/NanoPi-R2s/.config'
 
 env:
-  REPO_URL: https://github.com/1715173329/imoutowrt
-  REPO_BRANCH: master-ax3000-5.15
+  REPO_URL: https://github.com/solomonricky/openwrt
+  REPO_BRANCH: iptables-22.03
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: devices/Xiaomi-AX3600/.config
-  DIY_P1_SH: devices/Xiaomi-AX3600/diy-part1.sh
-  DIY_P2_SH: devices/Xiaomi-AX3600/diy-part2.sh
+  CONFIG_FILE: devices/NanoPi-R2s/.config
+  DIY_P1_SH: devices/NanoPi-R2s/diy-part1.sh
+  DIY_P2_SH: devices/NanoPi-R2s/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: false
