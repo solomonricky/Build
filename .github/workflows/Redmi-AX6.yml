@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/solomonricky/openwrt
-  REPO_BRANCH: IPQ807x-5.15
+  REPO_BRANCH: ipq807x-5.15
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: devices/Redmi-AX6/.config
   DIY_P1_SH: devices/Redmi-AX6/diy-part1.sh
