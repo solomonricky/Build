@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/solomonricky/openwrt
-  REPO_BRANCH: iptables-22.03
+  REPO_BRANCH: iptables-master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: devices/Xiaomi-CR6608/.config
   DIY_P1_SH: devices/Xiaomi-CR6608/diy-part1.sh

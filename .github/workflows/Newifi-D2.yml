@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/solomonricky/openwrt
-  REPO_BRANCH: iptables-22.03
+  REPO_BRANCH: iptables-master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: devices/Newifi-D2/.config
   DIY_P1_SH: devices/Newifi-D2/diy-part1.sh
