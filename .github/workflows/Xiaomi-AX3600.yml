@@ -20,8 +20,8 @@ on:
       - 'devices/Xiaomi-AX3600/.config'
 
 env:
-  REPO_URL: https://github.com/solomonricky/openwrt
-  REPO_BRANCH: IPQ807x-5.15
+  REPO_URL: https://github.com/solomonricky/lede
+  REPO_BRANCH: ipq807x
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: devices/Xiaomi-AX3600/.config
   DIY_P1_SH: devices/Xiaomi-AX3600/diy-part1.sh
