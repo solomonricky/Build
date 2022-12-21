@@ -20,8 +20,8 @@ on:
       - 'devices/Redmi-AX6/.config'
 
 env:
-  REPO_URL: https://github.com/1715173329/imoutowrt
-  REPO_BRANCH: master-ax3000-5.15
+  REPO_URL: https://github.com/solomonricky/lede
+  REPO_BRANCH: ipq807x
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: devices/Redmi-AX6/.config
   DIY_P1_SH: devices/Redmi-AX6/diy-part1.sh
