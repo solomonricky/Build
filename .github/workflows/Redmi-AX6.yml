@@ -20,8 +20,8 @@ on:
       - 'devices/Redmi-AX6/.config'
 
 env:
-  REPO_URL: https://github.com/solomonricky/openwrt
-  REPO_BRANCH: ipq807x
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: devices/Redmi-AX6/.config
   DIY_P1_SH: devices/Redmi-AX6/diy-part1.sh
@@ -59,6 +59,7 @@ jobs:
       run: |
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
+        git checkout 202bf05dbb14e328f5782dbbdc8206853fe24057
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
     - name: Load custom feeds
       run: |
