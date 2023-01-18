@@ -105,6 +105,7 @@ jobs:
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
+        apt install zip
         cd openwrt/bin/targets/*/*
         rm -rf packages
         zip -r ${{ env.DEVICE_SAVE_NAME }}.zip ./*
