@@ -85,7 +85,7 @@ jobs:
         echo "FILE_DATE=_$(date +"%Y%m%d")" >> $GITHUB_ENV
 
     - name: If Compile Error
-      id: rerun
+      id: failed_compile
       if: steps.compile.outcome == 'failure'
       run: |
         curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&text=Error occured! Failed to build ${{ env.DEVICE_SAVE_NAME }} firmware."
@@ -116,7 +116,7 @@ jobs:
         echo "::set-output name=status::success"
 
     - name: If Organize Error
-      id: rerun
+      id: failed_organize
       if: steps.organize.outcome == 'failure'
       run: |
         curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&text=Error occured! Failed to generate ${{ env.DEVICE_SAVE_NAME }} firmware."
